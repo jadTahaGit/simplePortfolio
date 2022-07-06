@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* for responsive text size */
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+::selection {
+  color: #fff;
+  background: #a51a1a;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* In index & contact me */
+.main-site {
+  display: block;
+  width: 80%;
+  z-index: 1;
+  margin-left: 20%;
+  height: 100vh;
+}
+
+.main-background-img {
+  /* background-color: #bababa; */
+  background-image: linear-gradient(
+      45deg,
+      rgba(34, 30, 30, 0.603),
+      rgba(34, 30, 30, 0.603)
+    ),
+    url("/img/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*-----------------------------------------*/
+/*           Aside        */
+/*-----------------------------------------*/
+.site-sidebar {
+  position: relative;
+  display: block;
+  z-index: 2;
+  width: 20%;
+  background-color: rgba(145, 13, 13, 0.8);
+  text-transform: uppercase;
+  padding: 4.8rem;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  position: fixed;
+  height: 100vh;
+}
+
+a,
+.nav-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.chevron-forward {
+  display: none;
+}
+
+.nav-link:hover .chevron-forward {
+  display: inline-block;
+  transform: translateY(10%);
+}
+
+.person-img {
+  border-radius: 50%;
+  width: 15rem;
+  height: auto;
+  margin-bottom: 2.4rem;
+}
+
+.person-content {
+  color: #fff;
+  margin-bottom: 4.8rem;
+}
+
+h1.person-name {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+h2.person-job-title {
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.site-sidebar nav {
+  text-align: left;
+  line-height: 30px;
+  font-size: 1.4rem;
+}
+
+.site-sidebar nav ul {
+  margin-bottom: 3.2rem;
+}
+
+.site-sidebar nav ul li {
+  list-style: none;
+}
+
+.site-sidebar nav ul li a {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 32px);
+}
+
+.social-icons p {
+  grid-row: 1;
+  grid-column: 1/5;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #333;
+}
+
+/*-----------------------------------------*/
+/*           Buttons        */
+/*-----------------------------------------*/
+
+.tag {
+  background-color: rgba(165, 26, 26, 0.733);
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0.4rem 0.8rem;
+  font-weight: 300;
+}
+
+.btn,
+.btn:visited,
+.btn:link {
+  color: #fff;
+  /* background-color: brown; */
+  display: inline-block;
+  padding: 1.2rem 3.2rem;
+  font-size: 3rem;
+  text-align: center;
+  border: 0.1px solid #fff;
+  margin-bottom: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.8s;
+  overflow: hidden;
+  z-index: 1;
+}
+/* ----------------------------------- */
+/* Mobile Nav */
+/* ----------------------------------- */
+
+/* .close-icon,
+.nav-icon {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 2.4rem;
+  top: 2.4rem;
+  z-index: 5;
+} */
+
+.close-icon,
+.nav-icon {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+
+  z-index: 5;
+}
+
+.close-icon {
+  right: 2.4rem;
+  top: 2.4rem;
+}
+
+.nav-icon {
+  right: 4rem;
+  top: 2.4rem;
+}
+
+.nav-icon:hover {
+  color: #a51a1a;
+}
+
+.close-icon:hover {
+  color: #fff;
+}
+
+/* .site-sidebar {
+  display: none;
+} */

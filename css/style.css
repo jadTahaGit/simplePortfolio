@@ -1,0 +1,56 @@
+/* site-main */
+
+.home-section {
+  padding: 15% 10rem;
+  color: #fff;
+}
+
+.home-heading {
+  font-size: 4.4rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgb(0 0 0 /60%);
+}
+
+.sub-heading {
+  font-size: 3em;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgb(0 0 0 /60%);
+}
+.home-buttons {
+  margin-top: 3.2rem;
+}
+
+.btn:hover,
+.btn:visited:hover,
+.btn:link:hover,
+.btn:active,
+.btn:visited:active,
+.btn:link:active {
+  color: brown;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.btn::before,
+.btn:visited::before,
+.btn:link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  width: 100%;
+  height: 0%;
+  background: #fff;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn:hover::before,
+.btn:visited:hover::before,
+.btn:link:hover::before,
+.btn:active::before,
+.btn:visited:active::before,
+.btn:link:active::before {
+  height: 180%;
+}

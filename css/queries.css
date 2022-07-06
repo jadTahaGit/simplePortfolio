@@ -1,0 +1,261 @@
+/* less than 1616 */
+@media (max-width: 101rem) {
+  .project-content {
+    grid-template-columns: 400px 1fr;
+  }
+}
+
+/* less than 1296 */
+@media (max-width: 81rem) {
+  .site-sidebar {
+    width: 30rem;
+  }
+
+  .main-site {
+    margin-left: 30rem;
+  }
+
+  .home-section {
+    padding: 12.8rem 4.8rem;
+    color: #fff;
+  }
+
+  .sub-heading {
+    max-width: 48rem;
+  }
+
+  .project-box {
+    margin-bottom: 8rem;
+  }
+
+  .project-content {
+    display: block;
+  }
+
+  .project-img {
+    margin-top: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* less than 960 */
+@media (max-width: 60rem) {
+  .main-site {
+    margin-left: 15rem;
+  }
+
+  .site-sidebar {
+    width: 15rem;
+    padding: 1.2rem;
+  }
+
+  .person-img {
+    border-radius: 50%;
+    width: 12rem;
+    height: auto;
+    margin-bottom: 1.2rem;
+  }
+
+  .person-content {
+    margin-bottom: 2.4rem;
+  }
+
+  h1.person-name {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  h2.person-job-title {
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  .site-sidebar nav ul {
+    margin-bottom: 2.4rem;
+  }
+
+  .social-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 2.4rem);
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .home-section {
+    padding: 9.6rem 4.8rem;
+    color: #fff;
+    max-width: 48rem;
+  }
+
+  .home-heading {
+    font-size: 3rem;
+  }
+
+  .sub-heading {
+    max-width: 24rem;
+    font-size: 1.6em;
+  }
+
+  .btn,
+  .btn:visited,
+  .btn:link {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
+  }
+
+  .btn:hover,
+  .btn:visited:hover,
+  .btn:link:hover,
+  .btn:active,
+  .btn:visited:active,
+  .btn:link:active {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .portfolio-section {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .project-box {
+    max-width: 48rem;
+    display: block;
+  }
+
+  .project-content {
+    display: block;
+  }
+
+  .project-time::after {
+    display: none;
+  }
+}
+
+/* ----------------------------------- */
+/* Less Than 672 */
+/* ----------------------------------- */
+
+@media (max-width: 42rem) {
+  /* .site-sidebar {
+    display: none;
+  } */
+
+  .main-site {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* .portfolio-section {
+    margin: 18rem 0;
+  } */
+
+  .nav-icon {
+    display: block;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  .site-sidebar {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #a51a1a;
+    width: 100%;
+    height: 50vh;
+    overflow-y: scroll;
+  }
+
+  .person,
+  .site-sidebar nav {
+    align-self: center;
+    text-align: center;
+  }
+
+  .person-img {
+    /* transform: translateX(-50%); */
+    align-self: center;
+    border-radius: 50%;
+    width: 6rem;
+    height: auto;
+    margin: 0.8rem 0 0.4rem;
+  }
+
+  .person-content {
+    margin-bottom: 0.4rem;
+    text-align: center;
+  }
+
+  .person-name {
+    /* transform: translateX(); */
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  .person-job-title {
+    /* transform: translateX(-50%); */
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  nav ul {
+    margin-bottom: 0.8rem;
+  }
+
+  nav ul li {
+    margin-bottom: 0.8rem;
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  nav ul li a {
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  nav ul li a:hover {
+    font-weight: 500;
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .social-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 2.4rem);
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  .project-box {
+    padding: 0;
+  }
+  .project-img {
+    padding: 0;
+    max-width: 100%;
+  }
+  .project-text ul {
+    margin-left: -1.8rem;
+  }
+  .btn-more-details {
+    margin: 0 50%;
+    transform: translateX(-50%);
+    width: 48%;
+  }
+}
+
+@media (max-width: 300px) {
+  .nav-icon {
+    right: -30rem;
+  }
+}

@@ -1,0 +1,143 @@
+.portfolio-section {
+  padding: 50px 50px;
+}
+
+.portfolio-title {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 3.6em;
+  font-weight: 300;
+  /* text-shadow: 1px 1px 2px rgb(0 0 0 /60%); */
+}
+
+.portfolio-start-text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #333;
+  width: fit-content;
+}
+
+strong {
+  color: #555;
+  font-weight: 700;
+}
+
+.project-box {
+  padding: 25px;
+  display: flex;
+  gap: 50px;
+}
+
+.project-time {
+  position: relative;
+  font-size: 1.6rem;
+  color: #555;
+  padding-right: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.project-time::after {
+  content: " ";
+  position: absolute;
+  top: 12.5px;
+  right: -2.5px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(187, 30, 30, 0.8);
+  transform: translateY(-5px);
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  gap: 25px;
+}
+
+.project-title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.project-subtitle {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  color: #555;
+  width: fit-content;
+}
+
+.project-description {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.project-ul {
+  margin-bottom: 1.6rem;
+}
+
+.project-list {
+  margin-left: 3.2rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.tech-heading {
+  text-transform: uppercase;
+  color: #555;
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-img {
+  width: 400px;
+  height: auto;
+}
+
+.project-img-box {
+  align-self: center;
+}
+
+.btn-more-details,
+.btn-more-details:link,
+.btn-more-details:visited {
+  display: inline-block;
+  background: none;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.6rem;
+  border: 2px solid #fff;
+}
+
+.btn-more-details::before,
+.btn-more-details:link::before,
+.btn-more-details:visited::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #a51a1a;
+  z-index: -1;
+  transition: 0.8s;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  height: 180%;
+}
+
+.btn-more-details:hover,
+.btn-more-details:link:hover,
+.btn-more-details:visited:hover {
+  color: #a51a1a;
+  border-color: #a51a1a;
+}
+
+.btn-more-details:hover::before,
+.btn-more-details:link:hover::before,
+.btn-more-details:visited:hover::before {
+  height: 0%;
+}
